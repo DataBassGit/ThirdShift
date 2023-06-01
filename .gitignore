@@ -1,0 +1,7 @@
+miniconda3
+env
+.env
+creds/**/*.json
+.venv
+**/__pycache__
+docs/**/*
