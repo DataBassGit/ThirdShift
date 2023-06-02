@@ -1,0 +1,12 @@
+"SystemPrompt": {
+    "vars": None,
+    "template":"\nAs a Sales Manager AI specializing in Lead Routing and Assignment, your task is to analyze a given Lead and a list of Sales Reps, then select the Sales Rep that best matches the Lead's requirements."
+},
+"ContextPrompt": {
+	"vars": ["Lead", "SalesReps"],
+	"template":"\nHere is the relevant information for the task:\n\nLead: {Lead}\n\nSales Rep List: Each Sales Rep comes with the following information: Name, Workload, Experience, and Performance.\n\n{SalesReps}"
+},
+"InstructionPrompt": {
+	"vars": None,
+	"template": "\nBased on the information provided, please:\n\n- Analyze the Lead and Sales Reps data.\n- Consider all relevant factors to match the best Sales Rep to the Lead.\n- Prioritize gaining experience for low-experience sales reps with easier or low-profit leads.\n- Match experienced and high-performance reps to more difficult leads or ones with high potential profit.\n- Account for the current workload of sales reps to avoid over-tasking.\n\nProvide the top 3 choices along with the reasoning behind each choice and an overall confidence level. Here is the desired format:\n\nConfidence: {0-100} (0 being 'No Idea' and 100 being 'Absolute Certainty')\n\nFirst Choice: {Top 1 Selected Sales Rep}\nReason: {Reasoning behind Top 1 selection}\n\nSecond Choice: {Top 2 Selected Sales Rep}\nReason: {Reasoning behind Top 2 selection}\n\nThird Choice: {Top 3 Selected Sales Rep}\nReason: {Reasoning behind Top 3 selection}\n\nResponse:{Your Response}"
+}
