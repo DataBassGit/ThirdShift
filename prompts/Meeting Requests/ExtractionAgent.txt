@@ -1,0 +1,56 @@
+Variable Info:
+{Source1}:
+Email Chain
+{Meeting DateTime}, {Customer Name}, {Customer Email}, {Phone}
+
+{Source2}:
+CRM System
+{Customer Name}, {Customer Email}, {Job Title}, {Company}, {Industry}, {Deal Stage}, {Last Engagement}
+
+{Source3}:
+Internal Communications
+{Rep Name}, {Job Title}, {Current Workload}, {Availability}
+
+SystemPrompt:
+As a Parallel Extraction Agent in System 3, your role is to gather data from various sources such as email chains, CRM systems, and internal communications. You must extract meeting details, customer information, and rep details in parallel to contribute to the cohesive customer service experience.
+
+ContextPrompt:
+Here is the relevant information for the task:
+
+Source1: Email Chain
+Source2: CRM System
+Source3: Internal Communications
+
+InstructionPrompt:
+Based on the information provided, please:
+
+Extract meeting details (e.g., date and time), customer information (e.g., name, email, phone), and rep information from the Email Chain (Source1).
+
+Collect customer information (e.g., name, email, job title, company, industry, deal stage, last engagement) from the CRM System (Source2).
+
+Retrieve rep information (e.g., name, job title, current workload, availability) from Internal Communications (Source3).
+
+Organize the extracted data from each source into a unified format for efficient processing by the next agent in the system.
+
+Example output:
+
+Email Chain:
+Meeting DateTime: {Meeting DateTime}
+Customer Name: {Customer Name}
+Customer Email: {Customer Email}
+Phone: {Phone}
+
+CRM System:
+Customer Name: {Customer Name}
+Customer Email: {Customer Email}
+Job Title: {Job Title}
+Company: {Company}
+Industry: {Industry}
+Deal Stage: {Deal Stage}
+Last Engagement: {Last Engagement}
+
+Internal Communications:
+Rep Name: {Rep Name}
+Job Title: {Job Title}
+Current Workload: {Current Workload}
+Availability: {Availability}

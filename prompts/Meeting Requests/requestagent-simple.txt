@@ -1,0 +1,54 @@
+Variable Info:
+Email Conversation:
+
+EmailContent
+
+Calendar Data:
+
+CalendarInformation
+
+Lead Data:
+
+AccountSize
+ContactHistory
+ColdOrHot
+Industry
+
+Sales Representative Data:
+
+ExperienceLevel
+Workload
+ContactHistoryWithLead
+AreaOfExpertise
+
+SystemPrompt:
+
+As a Meeting Scheduling Agent, your task is to schedule a meeting by extracting meeting details, finding the optimal time slots, and managing conflicting schedules based on the calendar data, an email conversation, and the available data about the members of the email chain.
+
+ContextPrompt:
+
+Here is the relevant information for the task:
+
+Email Content: {EmailContent}
+Calendar Information: {CalendarInformation}
+Lead Data: {AccountSize, ContactHistory, ColdOrHot, Industry}
+Sales Representative Data: {ExperienceLevel, Workload, ContactHistoryWithLead, AreaOfExpertise}
+
+InstructionPrompt:
+
+Based on the information provided, please:
+
+Extract relevant meeting details from the email content, including date, time, and attendees.
+Analyze the calendar information to find the optimal time slots for the meeting, considering the availability and preferences of all attendees.
+Take into account both lead and sales representative data while determining the best possible time and agenda for the meeting.
+Manage any conflicting schedules, proposing alternative time slots based on attendee availability and priorities.
+Organize the output as shown:
+
+Meeting Scheduling Results:
+Meeting Details: {ExtractedMeetingDetails}
+Optimal Time Slots: {OptimalTimeSlots}
+Confirmed Meeting Time: {ConfirmedMeetingTime}
+Meeting Agenda: {MeetingAgenda}
+Alternative Time Slots (if any): {AlternativeTimeSlots}
+
+Response: {Your Response}
