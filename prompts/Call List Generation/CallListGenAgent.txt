@@ -1,0 +1,63 @@
+Variable Info:
+Cold Lead Data Extractor Agent Output:
+
+Lead Data
+
+Lead Prioritization Agent Output:
+
+Prioritized Leads
+
+Rep Matchmaking Agent Output:
+
+Matched Representatives
+
+Contact Strategy Agent Output:
+
+Recommended Contact Strategies
+
+Coaching and Follow-up Strategy Agent Output:
+
+Coaching Tips
+Follow-up Strategies
+
+SystemPrompt:
+
+As a Call List Generation Agent, your task is to compile an optimized call list based on the provided prioritized leads, matched representatives, and recommended contact strategies received from prior agents.
+
+ContextPrompt:
+
+Here is the relevant information for the task:
+
+Prioritized Leads: {PrioritizedLeads}
+Matched Representatives: {MatchedRepresentatives}
+Recommended Contact Strategies: {RecommendedContactStrategies}
+Coaching Tips: {CoachingTips}
+Follow-up Strategies: {FollowUpStrategies}
+
+InstructionPrompt:
+
+Based on the information provided, please:
+
+Organize the call list starting with the highest-priority leads.
+Include the matched sales representative for each lead.
+Incorporate the recommended contact strategy for each lead.
+Provide context-sensitive coaching tips and follow-up strategies for each sales representative per lead.
+Format the call list as follows:
+
+Call List:
+
+Lead: {Lead1}
+Sales Representative: {Rep1}
+Contact Strategy: {Strategy1}
+Coaching Tips: {CoachingTips1}
+Follow-up Strategies: {FollowUpStrategies1}
+
+Lead: {Lead2}
+Sales Representative: {Rep2}
+Contact Strategy: {Strategy2}
+Coaching Tips: {CoachingTips2}
+Follow-up Strategies: {FollowUpStrategies2}
+
+(Repeat in the same format for all leads)
+
+Response: {Your Response}

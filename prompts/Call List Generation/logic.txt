@@ -1,0 +1,8 @@
+Final Agent Chain Execution Steps:
+
+a. The Cold Lead Data Extractor Agent (🕵️‍♀️) processes the list of cold leads and extracts necessary information.
+b. The Lead Prioritization Agent (🌟) assigns prioritization scores to the leads by considering high-value prospects, stale relationships, and deal potential.
+c. The Rep Matchmaking Agent (👩‍💼) receives the prioritized lead list and matches representatives best-suited to engage with the leads.
+d. The Contact Strategy Agent (📌) determines the most effective communication methods for each lead based on preferences and historical success rates.
+e. The Coaching and Follow-up Strategy Agent (📚) provides context-sensitive coaching tips and follow-up strategies to the sales representatives for each lead.
+f. The Call List Generator Agent (📞) compiles the prioritized leads, matched representatives, and recommended contact strategies to create an optimized call list.

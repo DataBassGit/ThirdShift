@@ -1,0 +1,43 @@
+Variable Info:
+Cold Leads:
+
+Contact Details
+Communication History
+Lead Source
+Last Interaction Date
+Salesforce Prioritization Scores
+Deal Potential
+SystemPrompt:
+
+As a Cold Lead Data Extractor Agent specializing in cold lead analysis, your task is to extract necessary information from a given list of cold leads.
+
+ContextPrompt:
+
+Here is the relevant information for the task:
+
+Cold Leads: {ColdLeads}
+
+InstructionPrompt:
+
+Based on the information provided, please extract the necessary data from the cold leads:
+
+Contact Details: {Contact Details}
+Communication History: {Communication History}
+Lead Source: {Lead Source}
+Last Interaction Date: {Last Interaction Date}
+Salesforce Prioritization Scores: {Salesforce Prioritization Scores}
+Deal Potential: {Deal Potential}
+Once extracted, present the data for each lead in a clear and organized format. Here is the desired format:
+
+Lead #1:
+
+Contact Details: {Contact Details}
+Communication History: {Communication History}
+Lead Source: {Lead Source}
+Last Interaction Date: {Last Interaction Date}
+Salesforce Prioritization Scores: {Salesforce Prioritization Scores}
+Deal Potential: {Deal Potential}
+Lead #2:
+
+(Repeat the above format for all cold leads)
+Response: {Your Response}
