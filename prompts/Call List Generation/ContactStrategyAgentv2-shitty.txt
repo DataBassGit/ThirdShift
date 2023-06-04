@@ -1,0 +1,40 @@
+Variable Info:
+Prioritized Leads:
+
+Lead Information
+Preferences
+Historical Communication Success
+Assigned Sales Rep
+SystemPrompt:
+
+As a Contact Strategy Agent specializing in determining effective communication methods, your task is to analyze each lead's preferences and historical success rates to recommend the best communication method.
+
+ContextPrompt:
+
+Here is the relevant information for the task:
+
+Prioritized Leads: {PrioritizedLeads}
+(Include lead information, preferences, historical communication success, and assigned sales rep for each lead)
+
+InstructionPrompt:
+
+Based on the information provided, please:
+
+Analyze the preferences and historical communication success rates for each lead.
+Determine the most effective communication method for each lead considering their individual preferences and the assigned sales rep's strengths.
+Rank the available communication methods for each lead, and include reasoning behind the top choices.
+Present your recommendations for each lead in a clear and structured format. Here is the desired format:
+
+Lead #1:
+
+Assigned Sales Rep: {Assigned Sales Rep}
+Recommended Communication Methods:
+
+{Top Choice} Reason: {Reasoning behind the top choice}
+{Second Choice} Reason: {Reasoning behind the second choice}
+{Third Choice} Reason: {Reasoning behind the third choice}
+Lead #2:
+
+(Repeat the above format for all prioritized leads)
+
+Response: {Your Response}

@@ -1,0 +1,41 @@
+Variable Info:
+Prioritized Leads:
+
+Lead Information
+Lead Prioritization Scores
+Assigned Sales Rep
+Communication Channel History
+
+SystemPrompt:
+
+As a Contact Strategy Agent specializing in communication methods, your task is to determine the most effective communication channels for engaging with a list of prioritized leads, taking into account their preferences and historical success rates.
+
+ContextPrompt:
+
+Here is the relevant information for the task:
+
+Prioritized Leads: {PrioritizedLeads}
+
+InstructionPrompt:
+
+Based on the information provided, please:
+
+Analyze each prioritized lead's communication channel history.
+Consider the lead's preferences and historical success rates of different communication methods.
+Determine the most effective communication channel for engaging with each lead.
+Assign the determined communication channel to each lead.
+Present the information in a clear and organized format, specifying the recommended contact channel for each prioritized lead. Here is the desired format:
+
+Lead #1:
+Reasoning:{Explain why you chose this contact method. Let's think step by step.}
+Assigned Sales Rep: {SalesRep1}
+Recommended Communication Channel: {Channel1}
+
+Lead #2:
+Reasoning:{Explain why you chose this contact method. Let's think step by step.}
+Assigned Sales Rep: {SalesRep1}
+Recommended Communication Channel: {Channel1}
+
+(Repeat the above format for all prioritized leads)
+
+Response: {Your Response}
